@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      {% load static %}
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+      <style>
+        .content{
+          text-align:center;
+        }
+
+        .mfp-hide{
+          display: none !important;
+        }
+
+        iframe{
+          margin-left:80px;
+        }
+        button.mfp-close{
+          overflow: visible;
+          cursor: pointer;
+          background: white;
+          border: 0;
+          -webkit-appearance: none;
+          display: block;
+          outline: 0;
+          padding: 0;
+          z-index: 1046;
+          box-shadow: none;
+        }
+        .mfp-close{
+          width: 44px;
+          height: 44px;
+          border-radius: 50px;
+          line-height: 44px;
+          position: absolute;
+          right: 40px;
+        }
+
+      </style>
+
+<style>
+  .containe {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .containe img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .containe .btns {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:transparent;
+ 
+    text-align: center;
+  }
+  
+
+  </style>
+  </head>
+  
+  <body >
+  <div class="content" >
+<div class="block block--largest power_squares_block" >
+<div class="containe" >
+  <img style="border-radius: 15px;" src="https://www.adobe.com/express/create/thumbnail/media_1dbde0324d7a246981b97c7efc38d56176d359e3f.jpeg?width=400&format=jpeg&optimize=medium" alt="Snow" style="width:100%">
+  <div class="btns">
+  <a href="#videostory"  id="videolink">
+    <img src="{% static 'landcoalition/images/nn.png' %}" style="width:70px;" >
+  </a>
+  
+</div>
+<h5 >Design With Me </h5>
+</div>
+
+<div class="containe">
+  <img style="border-radius: 15px;" src="https://www.adobe.com/express/create/thumbnail/media_11e329fcde742e9407d2f7bacd1389d1bd36262a4.jpeg?width=400&format=jpeg&optimize=medium" alt="Snow" style="width:100%">
+  <div class="btns">
+    <a href="#videost"  id="videolink2">
+      <img src="{% static 'landcoalition/images/nn.png' %}" style="width:70px;" >
+    </a>
+</div>
+<h5 >Develoment with me</h5>
+</div>
+
+<div class="containe">
+  <img style="border-radius: 15px;" src="https://i.easil.com/wp-content/uploads/20210901123627/Vibrant-Colored-Block-Heading-Mied-out-youtube-thumbnail.jpg" alt="Snow" style="width:100%">
+  <div class="btns">
+    <a href="#videostory2"  id="videolink3">
+      <img src="{% static 'landcoalition/images/nn.png' %}" style="width:70px;" >
+    </a>
+</div>
+<h5 >Design with you </h5>
+</div>
+</div>
+
+
+<div id="videostory" class="mfp-hide" style="max-width: 75% ;margin:0 auto;" >
+
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/US8ePkxYI3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<div id="videost" class="mfp-hide" style="max-width: 75% ;margin:0 auto;" >
+
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/Cd9x5lPACB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<div id="videostory2" class="mfp-hide" style="max-width: 75% ;margin:0 auto;" >
+
+  <iframe width="853" height="480" src="https://www.youtube.com/embed/23Fo2t6zQKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+$('#videolink').magnificPopup({
+      type:'inline',
+      midClick:true,
+})
+
+$('#videolink2').magnificPopup({
+      type:'inline',
+      midClick:true,
+})
+
+$('#videolink3').magnificPopup({
+      type:'inline',
+      midClick:true,
+})
+
+</script>
+    
+  </body>
+</html>

@@ -12,3 +12,46 @@ from django.contrib.auth.models import User
 
 def Home(request):
     return render(request, 'frontend/index.html')
+
+
+def VIDEOS(request):
+    return render(request, 'frontend/videos.html')
+
+def AUDIOS(request):
+    return render(request, 'frontend/Audios.html')
+
+def BLOGS(request):
+    blo = Blogs.objects.all()
+    d = {"blo":blo}
+    return render(request, 'frontend/Blogs.html',d)
+
+def ABOUT(request):
+    CT = CoreTeam.objects.all()
+    TM = TeamMember.objects.all()
+    OP = OurPartner.objects.all()
+    d = {"ct":CT,"tm":TM,"op":OP}
+    return render(request, 'frontend/About.html',d)
+
+
+
+####################DYNAMIC#######################
+
+def CORETEAMDYNAMIC(request,blo_id):
+    cat = CoreTeam.objects.get(id=blo_id)
+    d = {"cat":cat,}
+    return render(request, 'dynamic/team.html',d)
+
+def TEAMMEMBERDYNAMIC(request,blo_id):
+    cat = TeamMember.objects.get(id=blo_id)
+    d = {"cat":cat,}
+    return render(request, 'dynamic/team.html',d)
+
+def OURPARTNERDYNAMIC(request,blo_id):
+    cat = OurPartner.objects.get(id=blo_id)
+    d = {"cat":cat,}
+    return render(request, 'dynamic/team.html',d)
+
+def BLOGDETAIL(request,blo_id):
+    cat = Blogs.objects.get(id=blo_id)
+    d = {"cat":cat,}
+    return render(request, 'dynamic/Blog_dynamic.html',d)

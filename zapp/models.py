@@ -1,3 +1,47 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.db.models.fields import IntegerField
+from djrichtextfield.models import RichTextField
 
-# Create your models here.
+class CoreTeam(models.Model):
+    name =  models.CharField(max_length=50)
+    Designation =  models.CharField(max_length=50)
+    detail = RichTextField(null=True)
+    image = models.FileField(null=True)
+    date = models.DateField(null=True)
+    def __str__(self):
+        return self.name
+
+class TeamMember(models.Model):
+    name =  models.CharField(max_length=50)
+    Designation =  models.CharField(max_length=50)
+    detail = RichTextField(null=True)
+    image = models.FileField(null=True)
+    date = models.DateField(null=True)
+    def __str__(self):
+        return self.name
+
+class OurPartner(models.Model):
+    name =  models.CharField(max_length=50)
+    Designation =  models.CharField(max_length=50)
+    detail = RichTextField(null=True)
+    image = models.FileField(null=True)
+    date = models.DateField(null=True)
+    def __str__(self):
+        return self.name
+
+class Blog_category(models.Model):
+    name = models.CharField(max_length=100)
+    def __str__(self):
+        return self.name
+
+
+class Blogs(models.Model):
+    categorys = models.ForeignKey(Blog_category, on_delete=models.CASCADE, null=True)
+    name =  models.CharField(max_length=50)
+    detail = models.TextField(null=True)
+    discription = RichTextField(null=True)
+    image = models.FileField(null=True)
+    date = models.DateField(auto_now=True)
+    def __str__(self):
+        return self.name

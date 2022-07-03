@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  
+    {% load static %}
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/bootstrap/css/bootstrap.min.css' %}">
+  <!-- Icon Font Css -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/icofont/icofont.min.css' %}">
+  <!-- Slick Slider  CSS -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/slick-carousel/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'doctor/plugins/slick-carousel/slick/slick-theme.css' %}">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'doctor/css/style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+    </style>
+
+</head>
+
+<body id="top">
+
+{% include 'header.html' %}
+
+<section class="section doctor-single" style="padding-left: 50px;padding-right: 50px;" >
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="doctor-img-block">
+					<img src="{{ cat.image.url }}" style="width:300px; height:390px;border-radius: 15px;"  class="img-fluid w-100">
+
+					<div class="info-block mt-4" style="text-align: center;" >
+						<h4 class="mb-0">{{ cat.name }}</h4>
+						<p>{{ cat.Designation }}</p>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-8 col-md-6">
+				<div class="doctor-details mt-4 mt-lg-0">
+				
+					<p style="text-align: justify;margin-top: -50px;" >{{ cat.detail }}</p>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    
+
+   
+{% include 'footer.html' %}
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="{% static 'doctor/plugins/jquery/jquery.js' %}"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="{% static 'doctor/plugins/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'doctor/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'doctor/plugins/counterup/jquery.easing.js' %}"></script>
+    <!-- Slick Slider -->
+    <script src="{% static 'doctor/plugins/slick-carousel/slick/slick.min.js' %}"></script>
+    <!-- Counterup -->
+    <script src="{% static 'doctor/plugins/counterup/jquery.waypoints.min.js' %}"></script>
+    
+    <script src="{% static 'doctor/plugins/shuffle/shuffle.min.js' %}"></script>
+    <script src="{% static 'doctor/plugins/counterup/jquery.counterup.min.js' %}"></script>
+    <!-- Google Map -->
+    <script src="{% static 'doctor/plugins/google-map/map.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    
+    <script src="{% static 'doctor/js/script.js' %}"></script>
+    <script src="{% static 'doctor/js/contact.js' %}"></script>
+
+  </body>
+  </html>
+   
