@@ -32,6 +32,23 @@ def ABOUT(request):
     d = {"ct":CT,"tm":TM,"op":OP}
     return render(request, 'frontend/About.html',d)
 
+def STORY(request):
+    sto = Story_category.objects.all()
+    d = {"sto":sto}
+    return render(request, 'frontend/Story_category.html',d)
+
+def EXPLORE(request):
+    sto = Story_category.objects.all()
+    d = {"sto":sto}
+    return render(request, 'frontend/explore.html',d)
+
+def LEARN(request):
+    
+    return render(request, 'frontend/learn.html',)
+
+def WORKSHOP(request):
+
+    return render(request, 'frontend/workshop.html')
 
 
 ####################DYNAMIC#######################
@@ -55,3 +72,14 @@ def BLOGDETAIL(request,blo_id):
     cat = Blogs.objects.get(id=blo_id)
     d = {"cat":cat,}
     return render(request, 'dynamic/Blog_dynamic.html',d)
+
+def STORYDETAIL(request,blo_id):
+    cat = Story_category.objects.get(id=blo_id)
+    subdata = Story.objects.filter(categorys= cat)
+    d = {"subdata":subdata,"cat":cat}
+    return render(request, 'dynamic/storydetail.html',d)
+
+def STORYDETAILDETAIL(request,bloo_id):
+    cat = Story.objects.get(id=bloo_id)
+    d = {"cat":cat}
+    return render(request, 'dynamic/storydetaildetail.html',d)

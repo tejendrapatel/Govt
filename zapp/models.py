@@ -45,3 +45,22 @@ class Blogs(models.Model):
     date = models.DateField(auto_now=True)
     def __str__(self):
         return self.name
+
+
+class Story_category(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.FileField(null=True)
+    para = models.TextField(null=True)
+    def __str__(self):
+        return self.name
+
+
+class Story(models.Model):
+    categorys = models.ForeignKey(Story_category, on_delete=models.CASCADE, null=True)
+    name =  models.CharField(max_length=50)
+    detail = models.TextField(null=True)
+    discription = RichTextField(null=True)
+    image = models.FileField(null=True)
+    date = models.DateField(auto_now=True)
+    def __str__(self):
+        return self.name

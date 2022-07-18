@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  
+    {% load static %}
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/bootstrap/css/bootstrap.min.css' %}">
+  <!-- Icon Font Css -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/icofont/icofont.min.css' %}">
+  <!-- Slick Slider  CSS -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/slick-carousel/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'doctor/plugins/slick-carousel/slick/slick-theme.css' %}">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'doctor/css/style.css' %}">
+
+</head>
+
+<body id="top">
+
+{% include 'header.html' %}
+
+
+<section class="section contact-info pb-0"  >
+    <div class="container">
+         <div class="row"  >
+
+            <div class="col-lg-1 col-sm-6 col-md-12">
+                
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-12">
+                <div class="contact-block mb-9 mb-lg-0" style="border-radius: 15px;width:420px" >
+                <a href="{% url 'workshop' %}"> <i style="top: 50%;
+                    left: 50%;
+                    position: absolute;
+                    margin-left: -25px;
+                    margin-top: -70px;
+                    color: #fff;
+                    font-size: 120px;" class="icofont-brand-myspace"></i></a> 
+                <a href="{% url 'workshop' %}">   <img src="https://images.unsplash.com/photo-1609252509229-364936a1d1a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" style="border-radius: 15px;" alt="" class="img-fluid"></a> 
+                  
+                <a href="{% url 'workshop' %}">   <h5 style="top: 80%;
+                    left: 50%;
+                    position: absolute;
+                    text-align: center;
+                    margin-top: -30px;
+                    font-weight: 1200;color: #fff;" >WORKSHOP</h5></a>
+            
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-12">
+              <div class="contact-block mb-9 mb-lg-0" style="border-radius: 15px;width:420px" >
+                <i  style="top: 35%;
+                  left: 50%;
+                  position: absolute;
+                  margin-left: -25px;
+                  margin-top: -30px;
+                  font-size: 150px;
+                  color:#fff;" class="icofont-people"></i>
+                <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" style="border-radius: 15px;" alt="" class="img-fluid">
+                
+                  <h5 style="top: 80%;
+                  left: 52%;
+                  position: absolute;
+                  text-align: center;
+                  margin-top: -30px;color: #fff;" >TRAINING</h5>
+          
+              </div>
+            </div>
+            <div class="col-lg-1 col-sm-6 col-md-12">
+                
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+  
+
+
+
+
+
+   
+{% include 'footer.html' %}
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="{% static 'doctor/plugins/jquery/jquery.js' %}"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="{% static 'doctor/plugins/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'doctor/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'doctor/plugins/counterup/jquery.easing.js' %}"></script>
+    <!-- Slick Slider -->
+    <script src="{% static 'doctor/plugins/slick-carousel/slick/slick.min.js' %}"></script>
+    <!-- Counterup -->
+    <script src="{% static 'doctor/plugins/counterup/jquery.waypoints.min.js' %}"></script>
+    
+    <script src="{% static 'doctor/plugins/shuffle/shuffle.min.js' %}"></script>
+    <script src="{% static 'doctor/plugins/counterup/jquery.counterup.min.js' %}"></script>
+    <!-- Google Map -->
+    <script src="{% static 'doctor/plugins/google-map/map.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    
+    <script src="{% static 'doctor/js/script.js' %}"></script>
+    <script src="{% static 'doctor/js/contact.js' %}"></script>
+
+  </body>
+  </html>
+   

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  
+    {% load static %}
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/bootstrap/css/bootstrap.min.css' %}">
+  <!-- Icon Font Css -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/icofont/icofont.min.css' %}">
+  <!-- Slick Slider  CSS -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/slick-carousel/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'doctor/plugins/slick-carousel/slick/slick-theme.css' %}">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'doctor/css/style.css' %}">
+
+</head>
+
+<body id="top">
+
+{% include 'header.html' %}
+<section class="page-title bg-1" style="background-image: url('https://images.unsplash.com/uploads/141247613151541c06062/c15fb37d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGZhcm1lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+            <span class="text-white"></span><br><br><br><br>
+            <h1 class="text-capitalize mb-5 text-lg" style="text-shadow: 2px 2px 3px black;">STORY</h1>
+  
+            <!-- <ul class="list-inline breadcumb-nav">
+              <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+              <li class="list-inline-item"><span class="text-white">/</span></li>
+              <li class="list-inline-item"><a href="#" class="text-white-50">All Department</a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section service-2">
+    <div class="container">
+      <div class="row">
+        
+      {% for i in sto %}
+  
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="service-block mb-5 mb-lg-0" style="border-radius: 15px;" >
+            <img src="{{ i.image.url }}" style="border-radius: 15px;" alt="" class="img-fluid">
+            <div class="content">
+              <h4 class="mt-4 mb-2 title-color">{{ i.name }}</h4>
+              <p class="mb-4" style="color: black;" >{{ i.para }}</p>
+            </div>
+            
+              <a href="{% url 'story' i.id %}" class="button button--secondary button--slim" style="background-color: #5B6D92;color:#fff;width:185px;height:40px;border-radius: 25px;padding-left: 22px;" >
+                Show More
+                  <svg class="icon icon--small" style="color: #fff;" >
+                      <use href="#arrow-right"/>
+                  </svg>
+              </a>
+          </div>
+            
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
+{% include 'footer.html' %}
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="{% static 'doctor/plugins/jquery/jquery.js' %}"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="{% static 'doctor/plugins/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'doctor/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'doctor/plugins/counterup/jquery.easing.js' %}"></script>
+    <!-- Slick Slider -->
+    <script src="{% static 'doctor/plugins/slick-carousel/slick/slick.min.js' %}"></script>
+    <!-- Counterup -->
+    <script src="{% static 'doctor/plugins/counterup/jquery.waypoints.min.js' %}"></script>
+    
+    <script src="{% static 'doctor/plugins/shuffle/shuffle.min.js' %}"></script>
+    <script src="{% static 'doctor/plugins/counterup/jquery.counterup.min.js' %}"></script>
+    <!-- Google Map -->
+    <script src="{% static 'doctor/plugins/google-map/map.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    
+    <script src="{% static 'doctor/js/script.js' %}"></script>
+    <script src="{% static 'doctor/js/contact.js' %}"></script>
+
+  </body>
+  </html>
+   

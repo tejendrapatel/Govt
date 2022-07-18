@@ -35,6 +35,7 @@
 
 
   {% include 'main_slider.html' %}
+ 
 
   <div class="background-text bg_light"  >
     <div class="background-text__text" aria-hidden="true" style="padding-left: 35%;" >
@@ -47,20 +48,14 @@
     <h1 class="block block--large highlight-header" style="padding-left: 32%;font-size: 60px;margin-top:-20px" ><span class="highlight-header__underline" style="color: #252B3A;" >IMPACT</span></h1>
   
   
-    <div class="row multiple" style="padding-left: 50px;padding-right: 50px;" >
-    </div>
-  
-  
-      
-          
-        
+    
       </div>
 
       
   
 
     
-      <div class="block block--largest power_squares_block">
+      <div class="block block--largest power_squares_block" style="padding-left: 35px;padding-right: 20px;" >
 
 <div class="power_square" style="width: 420px;" >
     <a href=""  >
@@ -78,7 +73,7 @@
                             <use href="#close"/>
                         </svg>
                     </div>
-                    <div class="tooltip_text"><p>64 percent of the overall population formerly made their living in neighboring states.</p>
+                    <div class="tooltip_text"><p >64 percent of the overall population formerly made their living in neighboring states.</p>
                     </div>
                 </div>
             
@@ -86,7 +81,7 @@
     </a>
 
     <div class="power-square__content" style="border-radius: 0px 0px 15px 15px  ;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 20%);" >
-        <p class="subtitle" style="text-align: justify;" >64 percent of the overall population formerly made their living in neighboring states.</p>
+        <p class="subtitle" style="text-align: left;" >64 percent of the overall population formerly made their living in neighboring states.</p>
 
         
         
@@ -127,7 +122,7 @@
     </a>
 
     <div class="power-square__content" style="border-radius: 0px 0px 15px 15px  ;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 20%);" >
-      <p class="subtitle" style="text-align: justify;" >Since the irrigation project's start, 75,219 households in the Kalipeeth area have benefited directly.</p>
+      <p class="subtitle" style="text-align: left;" >Since the irrigation project's start, 75,219 households in the Kalipeeth area have benefited directly.</p>
 
       
       
@@ -168,7 +163,7 @@
     </a>
 
     <div class="power-square__content" style="border-radius: 0px 0px 15px 15px  ;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 20%);" >
-      <p class="subtitle" style="text-align: justify;" > The overall production of the Mohanpura-Kundalia Irrigation Project In 2021, reached 3.90 lakh metric tonnes.</p>
+      <p class="subtitle" style="text-align: left;" > The overall production of the Mohanpura-Kundalia Irrigation Project In 2021, reached 3.90 lakh metric tonnes.</p>
 
       
       
@@ -194,7 +189,7 @@
   <div class="background-text__content"  >
     
       
-  <h1 class="block block--large highlight-header" style="padding-left: 32%;font-size: 60px;" ><span class="highlight-header__underline" style="color: #252B3A;" >The Project</span></h1>
+  <h1 class="block block--large highlight-header" style="padding-left: 32%;font-size: 60px;line-height:1;" ><span class="highlight-header__underline" style="color: #252B3A;" >The Project</span></h1>
 
 
   <div class="row multiple">
@@ -280,6 +275,17 @@
   </div>
 </div>
 
+<div class="background-text bg_light">
+  <div class="background-text__text" aria-hidden="true" style="padding-left: 20%;" >
+    Network Map
+  </div>
+
+  <div class="background-text__content"  >
+    
+      
+  <h1 class="block block--large highlight-header" style="padding-left: 12%;font-size: 60px;" ><span class="highlight-header__underline" style="color: #252B3A;" > OUR network</span></h1>
+
+<img style="padding-left: 100px;padding-right: 100px;" src="{% static 'landcoalition/images/MP.png' %}" style="width:50%;" >
 
 <div class="background-text bg_light">
   
@@ -508,7 +514,7 @@
 
 
   <div class="block button-block " style="text-align: center;" >
-    <a class="button button--cta" style="border-radius: 25px;color: #fff;background-color: #5B6D92;" href="">
+    <a class="button button--cta" style="border-radius: 25px;color: #fff;background-color: #5B6D92;" href="{% url 'story' %}">
       EXPLORE MORE
       <svg class="icon" style="color: #fff;" >
           <use href="#arrow-right"/>
