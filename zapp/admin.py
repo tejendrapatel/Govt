@@ -9,3 +9,9 @@ admin.site.register(Blog_category)
 admin.site.register(Blogs)
 admin.site.register(Story_category)
 admin.site.register(Story)
+
+################PROJECT################
+admin.site.register(faqss)
+
+################IMPACT################
+admin.site.register(StoriesOfChange)

@@ -348,23 +348,29 @@
   <div class="nav__sites" style="width:1700px;background-color: #fff;box-shadow: 0 6px 4px -4px rgb(24 24 24 / 20%);" >
     <h5 style="color: rgba(0,0,0,0.6);
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                     0px -5px 35px rgba(255,255,255,0.3);font-size: 25px;line-height: 0.9;" >Mohanpura and Kundalia Irrigation Project </h5>
+                     0px -5px 35px rgba(255,255,255,0.3);font-size: 24px;line-height: 0.9;" >Mohanpura and Kundalia Irrigation Project </h5>
   </div>
 
-  <div class="nav__main" style="background-color: #fff;    box-shadow: 0 6px 4px -4px rgb(24 24 24 / 20%);" >
+  <div class="nav__main" style="background-color: #fff;margin-left: -250px;    box-shadow: 0 6px 4px -4px rgb(24 24 24 / 20%);" >
     <ul>
     
       <li>
         <a style="color: #000000;" href="{% url 'explore' %}" class="nav-main__standard-page">EXPLORE</a>
       </li>
     
+    
       <li>
-        <a style="color: #000000;" href="{% url 'learn' %}" class="nav-main__redirect-page">LEARN</a>
+        <a style="color: #000000;" href="{% url 'project' %}" class="nav-main__standard-page">PROJECT</a>
+      </li>
+
+      <li>
+        <a style="color: #000000;" href="{% url 'journey' %}" class="nav-main__standard-page">JOURNEY</a>
       </li>
     
       <li>
-        <a style="color: #000000;" href="{% url 'story' %}" class="nav-main__standard-page">STORY</a>
+        <a style="color: #000000;" href="{% url 'impact' %}" class="nav-main__standard-page">IMPACT</a>
       </li>
+    
     
 
 </ul>
@@ -514,7 +520,7 @@
     Close menu
     <svg class="icon">
       <use href="#close"/>
-    </svg>
+    </svgt
   </label>
 </nav>
 
@@ -522,27 +528,27 @@
   <div class="four-column-grid">
   
     <div>
-      <h3><a href="">EXPLORE</a></h3>
+      <h3><a style="color:#ff6617"  href="{% url 'explore' %}">EXPLORE</a></h3>
       <p class="nav-summary-text">Explore our network, work and impact...</p>
 
       
         <ul class="navigation-list">
           
             <li>
-              <a href="">
+              <a href="{% url 'goal' %}">
                 GOAL
               </a>
               
             </li>
             <li>
-              <a href="">
+              <a href="{% url 'network' %}">
                 NETWORK
               </a>
               
             </li>
           
             <li>
-              <a href="">
+              <a href="{% url 'basin' %}">
                 BASin
               </a>
               
@@ -562,25 +568,25 @@
               
             </li>
             <li>
-              <a href="">
-                About us 
+              <a href="{% url 'about_us' %}">
+                About Project
               </a>
               
             </li>
             <li>
-              <a href="">
+              <a href="{% url 'about_team' %}">
                about team 
               </a>
               
             </li>
             <li>
-              <a href="">
+              <a href="{% url 'village' %}">
                 village
               </a>
               
             </li>
             <li>
-              <a href="">
+              <a href="{% url 'location' %}">
                 location
               </a>
               
@@ -595,21 +601,21 @@
     </div>
   
     <div>
-      <h3><a href="">PROJECT</a></h3>
-      <p class="nav-summary-text">Find inspiration and solutions in the Learning Hub</p>
+      <h3><a style="color:#ff6617"  href="{% url 'project' %}">PROJECT</a></h3>
+      <p class="nav-summary-text">Explore Our project and Workspace</p>
 
       
         <ul class="navigation-list">
           
             <li>
-              <a href="">
+              <a href="{% url 'mapdetail' %}">
                 map & Details
               </a>
               
             </li>
 
             <li>
-              <a href="">
+              <a href="{% url 'mohanpura' %}">
                 mohanpura
               </a>
               
@@ -635,7 +641,7 @@
               
             </li>
             <li>
-              <a href="">
+              <a href="{% url 'kundaliya' %}">
                 kundaliya
               </a>
               
@@ -657,7 +663,7 @@
             </li>
           
             <li>
-              <a href="">
+              <a href="{% url 'faq' %}">
                 faq
               </a>
               
@@ -668,34 +674,34 @@
     </div>
   
     <div>
-      <h3><a href="{% url 'story' %}">JOURNEY</a></h3>
-      <p class="nav-summary-text">Engage in network activities and events...</p>
+      <h3><a  style="color:#ff6617" href="{% url 'journey' %}">JOURNEY</a></h3>
+      <p class="nav-summary-text">Our Journey beigns with new activities and events...</p>
 
       
         <ul class="navigation-list">
           
             <li>
-              <a href="">
+              <a href="{% url 'story' %}">
                 Story
               </a>
               
             </li>
           
             <li>
-              <a href="">
+              <a href="{% url 'firststep' %}">
                 first step
               </a>
               
             </li>
           
             <li>
-              <a href="">
+              <a href="{% url 'implementation' %}">
                 implementation
               </a>
               
             </li>
             <li>
-              <a href="">
+              <a href="{% url 'establishment_of_pmu' %}">
                 Establishment of pmu
               </a>
               
@@ -706,15 +712,33 @@
     </div>
 
     <div>
-      <h3><a href="{% url 'story' %}">IMPACT</a></h3>
-      <p class="nav-summary-text">Engage in network activities and events...</p>
+      <h3><a style="color:#ff6617"  href="{% url 'impact' %}">IMPACT</a></h3>
+      <p class="nav-summary-text">Engage in Impact activities and events...</p>
 
       
         <ul class="navigation-list">
           
             <li>
-              <a href="">
+              <a href="{% url 'storiesofchange' %}">
                 Stories Of Change
+              </a>
+              
+            </li>
+            <li>
+              <a href="{% url 'resources' %}">
+                Resources
+              </a>
+              
+            </li>
+            <li>
+              <a href="{% url 'peoplesvoice' %}">
+                PEOPLE'S VOICE
+              </a>
+              
+            </li>
+            <li>
+              <a href="{% url 'learn' %}">
+                LEARN
               </a>
               
             </li>

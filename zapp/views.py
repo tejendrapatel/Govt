@@ -13,42 +13,131 @@ from django.contrib.auth.models import User
 def Home(request):
     return render(request, 'frontend/index.html')
 
-
-def VIDEOS(request):
-    return render(request, 'frontend/videos.html')
-
-def AUDIOS(request):
-    return render(request, 'frontend/Audios.html')
-
-def BLOGS(request):
-    blo = Blogs.objects.all()
-    d = {"blo":blo}
-    return render(request, 'frontend/Blogs.html',d)
-
-def ABOUT(request):
-    CT = CoreTeam.objects.all()
-    TM = TeamMember.objects.all()
-    OP = OurPartner.objects.all()
-    d = {"ct":CT,"tm":TM,"op":OP}
-    return render(request, 'frontend/About.html',d)
-
-def STORY(request):
+def STORYOFCHANGE(request):
     sto = Story_category.objects.all()
     d = {"sto":sto}
     return render(request, 'frontend/Story_category.html',d)
 
+####################EXPLORE#######################
+
 def EXPLORE(request):
     sto = Story_category.objects.all()
     d = {"sto":sto}
-    return render(request, 'frontend/explore.html',d)
+    return render(request, 'explore/explore.html',d)
+
+def GOAL(request):
+    return render(request, 'explore/goal.html')
+
+def NETWORK(request):
+    return render(request, 'explore/network.html')
+
+def BASIN(request):
+    return render(request, 'explore/basin.html')
+
+def ABOUT_US(request):
+    return render(request, 'explore/about_us.html')
+
+def ABOUT_TEAM(request):
+    CT = CoreTeam.objects.all()
+    TM = TeamMember.objects.all()
+    OP = OurPartner.objects.all()
+    d = {"ct":CT,"tm":TM,"op":OP}
+    return render(request, 'explore/about_team.html',d)
+
+def VILLAGE(request):
+    return render(request, 'explore/village.html')
+
+def LOCATION(request):
+    return render(request, 'explore/location.html')
+
+def VIDEOS(request):
+    return render(request, 'explore/videos.html')
+
+def AUDIOS(request):
+    return render(request, 'explore/Audios.html')
+
+def BLOGS(request):
+    blo = Blogs.objects.all()
+    d = {"blo":blo}
+    return render(request, 'explore/Blogs.html',d)
+
+
+
+
+
+
+
+
+
+
+####################JOURNEY#######################
+
+def STORY(request):
+    return render(request, 'journey/story.html')
+
+def JOURNEY(request):
+    return render(request, 'journey/journey.html')
+
+def FIRSTSTEP(request):
+    return render(request, 'journey/firststep.html')
+
+def IMPLEMENTATION(request):
+    return render(request, 'journey/implementation.html')
+
+def ESTABLISHMENT_OF_PMU(request):
+    return render(request, 'journey/establishment_of_pmu.html')
+
+##################################################
+
+####################PROJECT#######################
+
+def PROJECT(request):
+    return render(request, 'project/project.html')
+
+def FAQS(request):
+    fa = faqss.objects.all()
+    d = {"fa": fa}
+    return render(request, 'project/faqs.html',d)
+
+def MOHANPURA(request):
+    return render(request, 'project/mohanpura.html')
+
+def KUNDALIYA(request):
+    return render(request, 'project/kundaliya.html')
+
+def MAPDETAIL(request):
+    return render(request, 'project/mapdetail.html')
+
+
+##################################################
+
+####################IMPACT#######################
+
+def IMPACT(request):
+    return render(request, 'impact/impact.html')
+
+def STORIESOFCHANGE(request):
+    sto = StoriesOfChange.objects.all()
+    d = {"sto": sto}
+    return render(request, 'impact/storiesofchange.html',d)
+
+def RESOURCES(request):
+    return render(request, 'impact/resources.html')
+
+def PEOPLESVOICE(request):
+    return render(request, 'impact/peoplesvoice.html')
 
 def LEARN(request):
     
-    return render(request, 'frontend/learn.html',)
+    return render(request, 'impact/learn.html')
 
 def WORKSHOP(request):
 
-    return render(request, 'frontend/workshop.html')
+    return render(request, 'impact/workshop.html')
+
+
+
+##################################################
 
 
 ####################DYNAMIC#######################

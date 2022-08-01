@@ -9,12 +9,41 @@ urlpatterns = [
   path('djrichtextfield/', include('djrichtextfield.urls')),
   path('admin/', admin.site.urls),
   path('', Home, name='home'),
+  
+  path('storyofchange', STORYOFCHANGE, name='storyofchange'),
+  
+  ##################EXPLORE###################
+  path('explore', EXPLORE, name='explore'),
+  path('goal', GOAL, name='goal'),
+  path('network', NETWORK, name='network'),
+  path('basin', BASIN, name='basin'),
+  path('about_us', ABOUT_US, name='about_us'),
+  path('about_team', ABOUT_TEAM, name='about_team'),
+  path('village', VILLAGE, name='village'),
+  path('location', LOCATION, name='location'),
+
   path('videos', VIDEOS, name='videos'),
   path('audios', AUDIOS, name='audios'),
   path('blogs', BLOGS, name='blogs'),
-  path('about', ABOUT, name='about'),
+  ##################JOURNEY###################
   path('story', STORY, name='story'),
-  path('explore', EXPLORE, name='explore'),
+  path('journey', JOURNEY, name='journey'),
+  path('firststep', FIRSTSTEP, name='firststep'),
+  path('implementation', IMPLEMENTATION, name='implementation'),
+  path('establishment_of_pmu', ESTABLISHMENT_OF_PMU, name='establishment_of_pmu'),
+
+  ##################PROJECT###################
+  path('project', PROJECT, name='project'),
+  path('mapdetail', MAPDETAIL, name='mapdetail'),
+  path('mohanpura', MOHANPURA, name='mohanpura'),
+  path('kundaliya', KUNDALIYA, name='kundaliya'),
+  path('faq', FAQS, name='faq'),
+
+  ##################IMPACT###################
+  path('impact', IMPACT, name='impact'),
+  path('storiesofchange', STORIESOFCHANGE, name='storiesofchange'),
+  path('resources', RESOURCES, name='resources'),
+  path('peoplesvoice', PEOPLESVOICE, name='peoplesvoice'),
   path('learn', LEARN, name='learn'),
   path('workshop', WORKSHOP, name='workshop'),
 

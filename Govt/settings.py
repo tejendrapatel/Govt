@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'djrichtextfield',
     'zapp',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -52,6 +53,17 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'Govt.urls'
 
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js'],
+    'init_template': 'djrichtextfield/init/tinymce.js',
+    'settings': {
+        'menubar': True,
+        'plugins': 'link image',
+        'toolbar': 'bold italic | link image | removeformat | align | styles ',
+        'width': 700,
+        'height': 700
+    }
+}
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -128,3 +140,6 @@ EMAIL_HOST_PASSWORD = "gorurban@123"
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+
+
+

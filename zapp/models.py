@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.db.models.fields import IntegerField
 from djrichtextfield.models import RichTextField
 
+
 class CoreTeam(models.Model):
     name =  models.CharField(max_length=50)
     Designation =  models.CharField(max_length=50)
@@ -64,3 +65,24 @@ class Story(models.Model):
     date = models.DateField(auto_now=True)
     def __str__(self):
         return self.name
+
+
+
+######################PROJECT###############
+
+class faqss(models.Model):
+    quction =  models.CharField(null=True,max_length=50)
+    answer = models.TextField(null=True)
+############################################
+
+######################IMPACT###############
+
+class StoriesOfChange(models.Model):
+    name =  models.CharField(max_length=300)
+    detail = models.TextField(null=True)
+    discription = RichTextField(null=True)
+    image = models.FileField(null=True)
+    date = models.DateField(auto_now=True)
+    def __str__(self):
+        return self.name
+############################################
