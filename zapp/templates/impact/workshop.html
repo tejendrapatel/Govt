@@ -21,25 +21,26 @@
 
 {% include 'header.html' %}
 
-<section class="page-title bg-1" style="background-image: url('https://images.unsplash.com/photo-1586973831237-7d8dd03a996f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGZhcm1lcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60');">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block text-center">
-            <span class="text-white"></span><br><br><br><br>
-            <h1 class="text-capitalize mb-5 text-lg" style="text-shadow: 2px 2px 3px black;">WORKSHOP</h1>
-  
-            <!-- <ul class="list-inline breadcumb-nav">
-              <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-              <li class="list-inline-item"><span class="text-white">/</span></li>
-              <li class="list-inline-item"><a href="#" class="text-white-50">All Department</a></li>
-            </ul> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="page-title bg-1" style="background: linear-gradient(rgb(0 0 0 / 25%), #000), url({% static 'assets/images/zzz.jpg' %});height: 395px; > 
+  <div class="overlay" >
+ <div class="" >
+   <div class="row">
+     <div class="col-md-12">
+       <div class="block text-center">
+         <span class="text-white" style="text-align: center" >
+         <h1 class="text-capitalize mb-5 text-lg" style="margin-top: 30px;color: #fff;font-size: 50px;font-family: sans-serif;font-weight: 900;text-shadow: 2px 2px 3px black">Workshop</h1>
+         <span class="text-white"><a href="{% url 'home' %}">Home</a> / <a href="{% url 'workshop' %}">Workshop</a> </span>
+          </span>
+         <!-- <ul class="list-inline breadcumb-nav">
+           <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+           <li class="list-inline-item"><span class="text-white">/</span></li>
+           <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
+         </ul> -->
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
   
   
   

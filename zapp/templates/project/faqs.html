@@ -143,13 +143,13 @@
   <section class="spacer">
 
     <div class="container">
-      <h3>Frequently Asked Questions</h3>
+      <h4 style="font-family:Poppins,sans-serif" >Frequently Asked Questions</h4>
       <div class="accordion">
         {% for i in fa %}
         <div class="accordion-item">
-          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">{{ i.quction }}</span><span class="icon" aria-hidden="true"></span></button>
+          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title" style="font-family:Poppins,sans-serif" >{{ i.quction }}</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>{{ i.answer }}</p>
+            <p style="font-family:Poppins,sans-serif" >{{ i.answer }}</p>
           </div>
         </div>
       {% endfor %}
