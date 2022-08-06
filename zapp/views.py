@@ -11,7 +11,9 @@ from django.contrib.auth.models import User
 
 
 def Home(request):
-    return render(request, 'frontend/index.html')
+    sto = Story_category.objects.all()
+    d = {"sto":sto}
+    return render(request, 'frontend/index.html',d)
 
 def STORYOFCHANGE(request):
     sto = Story_category.objects.all()

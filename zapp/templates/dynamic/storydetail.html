@@ -44,12 +44,18 @@
                                     {% for i in subdata %}
                                     <div class="col-lg-6 col-md-6 col-sm-6"  >
                                         <div class="service-block mb-5" style="border-radius: 15px;" >
+                                            
                                             <img src="{{ i.image.url }}" style="border-radius: 15px;" alt="" class="img-fluid">
+                                            <div class="blog-item-meta mb-3">
+                                                <span class="text-muted text-capitalize mr-3"><i class="icofont-user-alt-7 mr-2"></i>admin</span>
+                                                <span class="text-black text-capitalize mr-3"><i class="icofont-calendar mr-2"></i> {{ i.date }}</span>
+                                            </div> 
                                             <div class="content">
                                                 
                                                 <p class="mb-4">{{ i.detail }}</p>
                                                 <h4 class="mt-4 mb-2 title-color">{{ i.date }}</h4>
                                             </div>
+                                            
                                             <div class="page-card__details" style="background-color:#fff;border-radius:0px 0px 15px 15px" >
                                                 <a href="{% url 'storydetaildetail' i.id %}" class="button button--secondary button--slim" style="background-color: #5B6D92;color:#fff;width:180px;height:40px;border-radius: 25px;padding-left: 22px;" >
                                                   Read More

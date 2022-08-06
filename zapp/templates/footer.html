@@ -11,12 +11,12 @@
     <div class="footer__contact">
       <h3 style="color: #fff;" >Contact</h3>
       
-            <p>xxx  xxx xxx xx x x x<br>
+            <p style="color: #fff;" >xxx  xxx xxx xx x x x<br>
             xxx  xxx<br>
             xxxx   xx  xxxxxxx xx<br>
             xxxxx - xxxxx xxx xx<br>
             Tel. +xx xx xxxx xxxx<br>
-            <a href="">info@xxxxxxxxxxxxxxx.org</a></p>
+            <a style="color: #fff;" href="">info@xxxxxxxxxxxxxxx.org</a></p>
     </div>
     
     <div class="footer__social">
@@ -73,7 +73,7 @@
     
     <div class="footer__subscribe">
       <h3 style="color: #fff;" >About our Team</h3>
-      <p>Vestibulum sed neque pellentesque, hendrerit libero posuere, mollis magna. Donec vel lacinia quam. Pellentesque rutrum viverra augue, eu blandit feli ante
+      <p style="color: #fff;" >Vestibulum sed neque pellentesque, hendrerit libero posuere, mollis magna. Donec vel lacinia quam. Pellentesque rutrum viverra augue, eu blandit feli ante
       </p>
     </div>
     
@@ -82,7 +82,7 @@
       
         <div>
           <h3><a href="" style="color: #fff;" >EXPLORE</a></h3>
-          <p class="nav-summary-text">Explore our network, work and impact...</p>
+          <p class="nav-summary-text" style="color: #fff;" >Explore our network, work and impact...</p>
     
           
             <ul class="navigation-list">
@@ -156,7 +156,7 @@
       
         <div>
           <h3><a href="" style="color: #fff;" >PROJECT</a></h3>
-          <p class="nav-summary-text">Find inspiration and solutions in the Learning Hub</p>
+          <p class="nav-summary-text" style="color: #fff;" >Find inspiration and solutions in the Learning Hub</p>
     
           
             <ul class="navigation-list">
@@ -239,7 +239,7 @@
       
         <div>
           <h3><a href="" style="color: #fff;" >JOURNEY</a></h3>
-          <p class="nav-summary-text">Engage in network activities and events...</p>
+          <p class="nav-summary-text" style="color: #fff;" >Engage in network activities and events...</p>
     
           
             <ul class="navigation-list">
@@ -277,7 +277,7 @@
       
         <div>
           <h3><a href="" style="color: #fff;" >IMPACT</a></h3>
-          <p class="nav-summary-text">Engage in network activities and events...</p>
+          <p class="nav-summary-text" style="color: #fff;" >Engage in network activities and events...</p>
     
           
             <ul class="navigation-list">
@@ -311,73 +311,38 @@
         <script>
           
         </script>
-    
-        <script>
-          let slideIndex = 0;
-          showSlides();
-          
-          function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlidesz");
-            let dots = document.getElementsByClassName("dotz");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 4000); // Change image every 2 seconds
+    <!-- script for banner slider-->
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 1
+          },
+          667: {
+            items: 1
+          },
+          1000: {
+            items: 1
           }
-          </script>
-          
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-          <script>
-            $('.multiple').slick({
-              dots: false,
-              infinite: true,
-              groupCells: true,
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoplaySpeed: 4000,
-              freeScroll: true,
-              wrapAround: true,
-              contain: true,
-              responsive: [
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
-                  infinite: true,
-                  dots: true
-                }
-              },
-              {
-                breakpoint: 600,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              },
-              {
-                breakpoint: 400,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-              },
-             
-                
-              }
-      ]
-            });
-    
-            
-          </script>
+        }
+      })
+    })
+  </script>
+  <!-- //script -->
+  <!-- script for tesimonials carousel slider -->
+
+
     
     </body></html>

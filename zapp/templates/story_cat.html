@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  
+    {% load static %}
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/bootstrap/css/bootstrap.min.css' %}">
+  <!-- Icon Font Css -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/icofont/icofont.min.css' %}">
+  <!-- Slick Slider  CSS -->
+  <link rel="stylesheet" href="{% static 'doctor/plugins/slick-carousel/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'doctor/plugins/slick-carousel/slick/slick-theme.css' %}">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{% static 'doctor/css/style.css' %}">
+
+</head>
+
+<body id="top">
+
+
+  <section class="section service-2">
+    <div class="container">
+      <div class="row">
+        
+      {% for i in sto %}
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="service-block mb-5 mb-lg-0" style="border-radius: 15px;background-image:url({% static 'assets/images/cccc.png' %}) ;margin-left: 10px;margin-right: 10px;
+        ;box-shadow: -2px 0px 15px 0px rgb(24 24 24 / 20%);border-radius: 15px;"  >
+          
+          <img src="{{ i.image.url }}" style="border-radius: 15px;" alt="" class="img-fluid">
+          <div class="content">
+            <h4 class="mt-4 mb-2 title-color">{{ i.name }}</h4>
+            <p class="mb-4" style="color: black;" >{{ i.para }}</p>
+          </div>
+          
+            <a href="{% url 'story' i.id %}" class="button button--secondary button--slim" style="background: linear-gradient(90.97deg, #FF6617 -5.37%, #FFB50B 103.01%);;border: 1px solid rgb(248, 248, 248);font-size: 17px;color:#fff;width:185px;height:40px;border-radius: 25px;padding-left: 22px;" >
+              Show More
+                <svg class="icon icon--small" style="color: #fff;" >
+                    <use href="#arrow-right"/>
+                </svg>
+            </a>
+        </div>
+
+
+
+        <br> <br>
+          
+        </div>
+
+
+  
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="{% static 'doctor/plugins/jquery/jquery.js' %}"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="{% static 'doctor/plugins/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'doctor/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'doctor/plugins/counterup/jquery.easing.js' %}"></script>
+    <!-- Slick Slider -->
+    <script src="{% static 'doctor/plugins/slick-carousel/slick/slick.min.js' %}"></script>
+    <!-- Counterup -->
+    <script src="{% static 'doctor/plugins/counterup/jquery.waypoints.min.js' %}"></script>
+    
+    <script src="{% static 'doctor/plugins/shuffle/shuffle.min.js' %}"></script>
+    <script src="{% static 'doctor/plugins/counterup/jquery.counterup.min.js' %}"></script>
+    <!-- Google Map -->
+    <script src="{% static 'doctor/plugins/google-map/map.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    
+    <script src="{% static 'doctor/js/script.js' %}"></script>
+    <script src="{% static 'doctor/js/contact.js' %}"></script>
+
+  </body>
+  </html>
+
+  

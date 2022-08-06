@@ -12,100 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
     <link href="{% static 'landcoalition/css/global_styles.4bd5143c67de.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;0,700;0,900;1,900&display=swap');
 </style>
 <script src="https://kit.fontawesome.com/0b930309e8.js" crossorigin="anonymous"></script>
- <!-- slider content start-->
- <style>
-  * {box-sizing: border-box;}
-  body {font-family:'Poppins', sans-serif;}
-  .mySlides {display: none;}
-  img {vertical-align: middle;}
-  
-  /* Slideshow container */
-  .slideshow-containerz {
-    max-width: 1600px;
 
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Caption text */
-  
-  
-  
-  
-  /* The dots/bullets/indicators */
-  .dotz {
-  
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color:#fff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-  .active {
-    background-color:#FF6617;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    
-  }
-
-
-  .one-slide {
-  border-radius: 3px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 1.1rem;
-  height: 300px;
-}
-  </style>
-  <!-- slider content end -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25274790-1"></script>
@@ -411,7 +323,7 @@
 
 <div style="background-color: #fff;   box-shadow: 0 6px 4px -4px rgb(24 24 24 / 20%);" class="language-picker" aria-expanded="false" aria-label="Select language">
   <button id="language-picker__toggle" class="language-picker__toggle" aria-controls="language-picker__list" tabindex="0">
-    <span class="language-picker__current-language">en</span>
+    <span class="language-picker__current-language" style="font-family: Poppins,sans-serif " >en</span>
 
     
     <svg class="language-picker__close icon">
@@ -429,7 +341,7 @@
               button--stroke-small
               language-picker__language
                active 
-            " href="/en/" lang="en">
+            " href="/en/" lang="en" style="font-family: Poppins,sans-serif " >
             en
           </a>
         
@@ -529,26 +441,26 @@
   
     <div>
       <h3><a style="color:#ff6617"  href="{% url 'explore' %}">EXPLORE</a></h3>
-      <p class="nav-summary-text">Explore our network, work and impact...</p>
+      <p class="nav-summary-text" style="color: #fff;"  >Explore our network, work and impact...</p>
 
       
         <ul class="navigation-list">
           
             <li>
-              <a href="{% url 'goal' %}">
+              <a style="color: #fff;"  href="{% url 'goal' %}">
                 GOAL
               </a>
               
             </li>
             <li>
-              <a href="{% url 'network' %}">
+              <a style="color: #fff;"  href="{% url 'network' %}">
                 NETWORK
               </a>
               
             </li>
           
             <li>
-              <a href="{% url 'basin' %}">
+              <a style="color: #fff;"  href="{% url 'basin' %}">
                 BASin
               </a>
               
@@ -568,25 +480,25 @@
               
             </li>
             <li>
-              <a href="{% url 'about_us' %}">
+              <a style="color: #fff;"  href="{% url 'about_us' %}">
                 About Project
               </a>
               
             </li>
             <li>
-              <a href="{% url 'about_team' %}">
+              <a style="color: #fff;"  href="{% url 'about_team' %}">
                about team 
               </a>
               
             </li>
             <li>
-              <a href="{% url 'village' %}">
+              <a style="color: #fff;"  href="{% url 'village' %}">
                 village
               </a>
               
             </li>
             <li>
-              <a href="{% url 'location' %}">
+              <a style="color: #fff;"  href="{% url 'location' %}">
                 location
               </a>
               
@@ -602,20 +514,20 @@
   
     <div>
       <h3><a style="color:#ff6617"  href="{% url 'project' %}">PROJECT</a></h3>
-      <p class="nav-summary-text">Explore Our project and Workspace</p>
+      <p class="nav-summary-text" style="color: #fff;"  >Explore Our project and Workspace</p>
 
       
         <ul class="navigation-list">
           
             <li>
-              <a href="{% url 'mapdetail' %}">
+              <a style="color: #fff;" href="{% url 'mapdetail' %}">
                 map & Details
               </a>
               
             </li>
 
             <li>
-              <a href="{% url 'mohanpura' %}">
+              <a style="color: #fff;"  href="{% url 'mohanpura' %}">
                 mohanpura
               </a>
               
@@ -641,7 +553,7 @@
               
             </li>
             <li>
-              <a href="{% url 'kundaliya' %}">
+              <a style="color: #fff;"  href="{% url 'kundaliya' %}">
                 kundaliya
               </a>
               
@@ -663,7 +575,7 @@
             </li>
           
             <li>
-              <a href="{% url 'faq' %}">
+              <a style="color: #fff;"  href="{% url 'faq' %}">
                 faq
               </a>
               
@@ -675,33 +587,33 @@
   
     <div>
       <h3><a  style="color:#ff6617" href="{% url 'journey' %}">JOURNEY</a></h3>
-      <p class="nav-summary-text">Our Journey beigns with new activities and events...</p>
+      <p class="nav-summary-text" style="color: #fff;"  >Our Journey beigns with new activities and events...</p>
 
       
         <ul class="navigation-list">
           
             <li>
-              <a href="{% url 'story' %}">
+              <a style="color: #fff;"  href="{% url 'story' %}">
                 Story
               </a>
               
             </li>
           
             <li>
-              <a href="{% url 'firststep' %}">
+              <a style="color: #fff;"  href="{% url 'firststep' %}">
                 first step
               </a>
               
             </li>
           
             <li>
-              <a href="{% url 'implementation' %}">
+              <a style="color: #fff;"  href="{% url 'implementation' %}">
                 implementation
               </a>
               
             </li>
             <li>
-              <a href="{% url 'establishment_of_pmu' %}">
+              <a style="color: #fff;"  href="{% url 'establishment_of_pmu' %}">
                 Establishment of pmu
               </a>
               
@@ -713,31 +625,31 @@
 
     <div>
       <h3><a style="color:#ff6617"  href="{% url 'impact' %}">IMPACT</a></h3>
-      <p class="nav-summary-text">Engage in Impact activities and events...</p>
+      <p class="nav-summary-text" style="color: #fff;"  >Engage in Impact activities and events...</p>
 
       
         <ul class="navigation-list">
           
             <li>
-              <a href="{% url 'storiesofchange' %}">
+              <a style="color: #fff;"  href="{% url 'storiesofchange' %}">
                 Stories Of Change
               </a>
               
             </li>
             <li>
-              <a href="{% url 'resources' %}">
+              <a style="color: #fff;"  href="{% url 'resources' %}">
                 Resources
               </a>
               
             </li>
             <li>
-              <a href="{% url 'peoplesvoice' %}">
+              <a style="color: #fff;"  href="{% url 'peoplesvoice' %}">
                 PEOPLE'S VOICE
               </a>
               
             </li>
             <li>
-              <a href="{% url 'learn' %}">
+              <a style="color: #fff;"  href="{% url 'learn' %}">
                 LEARN
               </a>
               
