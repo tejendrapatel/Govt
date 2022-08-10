@@ -60,31 +60,7 @@
 	</div>
 </section>
 
-<section class="section doctor-single" style="padding-right: 50px;padding-left: 50px;margin-top: -150px;" >
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-2 col-md-4">
-				<div class="doctor-img-block">
-					<img src="{% static 'landcoalition/images/jj.jpeg' %}" style="width: 200px;height: 200px;border-radius: 15px;">
-				</div>
-			</div>
 
-			<div class="col-lg-10 col-md-9">
-				<div class="doctor-details mt-4 mt-lg-0" >
-					<h4 style="font-size: 21px;" >Shree Jyotiraditya Scindia</h4>
-                    <h6>Minister of Civil Aviation,
-                        Government of India
-                       </h6>
-					<p style="color: #000000;text-align: justify;" >“The Government of India has initiated various steps for ensuring water to every household in India. Under the Jal Jeevan Mission, we have set targets and we are on the right track to achieving the same. I felt so happy after reviewing the Mohanpura project. I feel that this project is one of the best projects, not only in India but at the world level, which is supplying water to the
-                        fields of farmers and such supplies are sensor-enabled.”
-
-                        
-                        </p>
-				</div>
-			</div>
-		</div> 
-	</div>
-</section>
 
 
 <!-- portfolio -->
@@ -111,8 +87,8 @@
                  </div>
               </div>
               <div class="content mt-3" style="text-align: center;" >
-                  <h4 class="mb-0"><a  href="{% url 'CoreTeamDynamic' i.id %}">{{ i.name }}</a></h4>
-                  <a href="{% url 'CoreTeamDynamic' i.id %}"><p>{{ i.Designation }}</p></a> 
+                  <h4 class="mb-0" style="font-size:20px ;" ><a  href="{% url 'CoreTeamDynamic' i.id %}">{{ i.name }}</a></h4>
+                  <a href="{% url 'CoreTeamDynamic' i.id %}"><p  style="color: #000;" >{{ i.Designation }}</p></a> 
               </div> 
             </div>
         </div>
@@ -197,7 +173,7 @@
     </div>
   </section>
   <!-- /portfolio -->
-  {% include 'timeline.html' %}
+ 
 {% include 'footer.html' %}
     <!-- 
     Essential Scripts

@@ -13693,7 +13693,7 @@ a.link-style1 {
   font-weight:600;
 }
 .title-subhny {
-  font-size: 14px;
+  font-size: 29px;
   font-weight:700;
   text-transform: uppercase;
   line-height: 30px;
@@ -14303,10 +14303,7 @@ input:checked+.mode-container i.gg-moon {
   }
 }
 
-/*-- homeblock1 --*/
-.home-services {
-  position: relative;
-}
+
 
 .box-wrap {
   padding: 40px 40px;
@@ -14374,12 +14371,8 @@ input:checked+.mode-container i.gg-moon {
 
 /*-- //homeblock1 --*/
 
-/*--  home page services --*/
-.w3l-bottom-grids-6 {
-  background: var(--bg-grey);
-  position: relative;
-  z-index: 1;
-}
+
+
 
 .w3l-bottom-grids-6 .area-box {
   padding: 50px 35px;
@@ -16479,3 +16472,56 @@ section#contact {
 /*--//contact--*/
 
 /*# sourceMappingURL=style-freedom.css.map */
+
+
+.service {
+  padding-top: 180px;
+}
+
+.service .service-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.service .icon {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.service i {
+  color: #e12454;
+}
+
+.service h4 {
+  padding-left: 20px;
+}
+
+.service .content {
+  clear: both;
+}
+
+.service-block {
+  padding: 20px;
+  margin-top: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 38px rgba(21, 40, 82, 0.07);
+}
+
+.service-block img {
+  width: 100%;
+  margin-top: -60px;
+  border: 5px solid #fff;
+}
+
+.department-service {
+  margin-bottom: 40px;
+}
+
+.department-service li {
+  margin-bottom: 10px;
+}
+
+.department-service li i {
+  color: #e12454;
+}

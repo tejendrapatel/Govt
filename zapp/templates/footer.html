@@ -1,15 +1,14 @@
 {% load static %}
-<footer class="page-footer inverted" style="background-color: #252B3A;padding-left: 50px;padding-right: 50px;" >
+<footer class="page-footer inverted" style="background-color: #252B3A;padding-left: 50px;padding-right: 50px" >
         
 
     <div class="footer__brand"  >
-      <img style="width:50%;padding-top: 4.5px;" src="{% static 'landcoalition/images/log.png' %}" >
-      <p style="font-size:20px;color: #fff;" >MP GOVERMENT</p>
-      
+      <img style="width:100%;padding-top: 4.5px;" src="{% static 'landcoalition/images/logo_foot.png' %}" >
+   
     </div>
     
     <div class="footer__contact">
-      <h3 style="color: #fff;" >Contact</h3>
+      <h3 style="color: #ff6617" >Contact</h3>
       
             <p style="color: #fff;" >xxx  xxx xxx xx x x x<br>
             xxx  xxx<br>
@@ -20,20 +19,20 @@
     </div>
     
     <div class="footer__social">
-      <h3 style="color: #fff;;" >ILC Social</h3>
+      <h3 style="color: #ff6617;;" >ILC Social</h3>
       <ul class="social">
       
       <li>
-        <a href="" class="facebook" target="_blank">
-          <svg class="icon">
-            <use href="#facebook"/>
+        <a style="color: #fff;" href="" class="facebook" target="_blank">
+          <svg  class="icon">
+            <use  href="#facebook"/>
           </svg> Facebook
         </a>
       </li>
       
       
       <li>
-        <a href="" class="twitter" target="_blank">
+        <a style="color: #fff;" href="" class="twitter" target="_blank">
           <svg class="icon">
             <use href="#twitter"/>
           </svg> Twitter
@@ -42,7 +41,7 @@
       
       
       <li>
-        <a href="" class="youtube" target="_blank">
+        <a style="color: #fff;" href="" class="youtube" target="_blank">
           <svg class="icon">
             <use href="#youtube"/>
           </svg> YouTube
@@ -51,7 +50,7 @@
       
       
       <li>
-        <a href="" class="instagram" target="_blank">
+        <a style="color: #fff;" href="" class="instagram" target="_blank">
           <svg class="icon">
             <use href="#instagram"/>
           </svg> Instagram
@@ -60,7 +59,7 @@
       
       
       <li>
-        <a href="" class="linkedin" target="_blank">
+        <a style="color: #fff;" href="" class="linkedin" target="_blank">
           <svg class="icon">
             <use href="#linkedin"/>
           </svg> LinkedIn
@@ -72,37 +71,43 @@
     </div>
     
     <div class="footer__subscribe">
-      <h3 style="color: #fff;" >About our Team</h3>
-      <p style="color: #fff;" >Vestibulum sed neque pellentesque, hendrerit libero posuere, mollis magna. Donec vel lacinia quam. Pellentesque rutrum viverra augue, eu blandit feli ante
+      <h3 style="color: #ff6617" >SUBSCRIBE</h3>
+      <p style="color: #fff;" >For more stories on how our members are fighting for land rights, subscribe to our newsletter now!
       </p>
+      <a href="" class="button button--secondary button--slim" style="background: linear-gradient(90.97deg, #FF6617 -5.37%, #FFB50B 103.01%);;border: 1px solid rgb(248, 248, 248);font-size: 17px;color:#fff;width:170px;height:44px;border-radius: 25px;padding-left: 22px;" >
+        SUBSCRIBE
+          <svg class="icon icon--small" style="color: #fff;" >
+              <use href="#arrow-right"/>
+          </svg>
+      </a>
     </div>
     
     <div class="footer__links">
       <div class="four-column-grid">
       
         <div>
-          <h3><a href="" style="color: #fff;" >EXPLORE</a></h3>
+          <h3><a href="{% url 'explore' %}" style="color: #ff6617" >EXPLORE</a></h3>
           <p class="nav-summary-text" style="color: #fff;" >Explore our network, work and impact...</p>
     
           
             <ul class="navigation-list">
               
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'goal' %}">
                     GOAL
                   </a>
                   
                 </li>
               
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'network' %}">
                     NETWORK
                   </a>
                   
                 </li>
               
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'basin' %}">
                     BASIN
                   </a>
                   
@@ -124,25 +129,25 @@
                 </li>
 
                 <li>
-                  <a href="">
-                    ABOUT US
+                  <a style="color: #fff;" href="{% url 'about_project' %}">
+                    ABOUT PROJECT
                   </a>
                   
                 </li>
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'about_team' %}">
                     ABOUT TEAM
                   </a>
                   
                 </li>
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'village' %}">
                     VILLAGE
                   </a>
                   
                 </li>
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'location' %}">
                     LOCATION
                   </a>
                   
@@ -155,20 +160,20 @@
         </div>
       
         <div>
-          <h3><a href="" style="color: #fff;" >PROJECT</a></h3>
-          <p class="nav-summary-text" style="color: #fff;" >Find inspiration and solutions in the Learning Hub</p>
+          <h3><a href="{% url 'project' %}" style="color:#ff6617" >PROJECT</a></h3>
+          <p class="nav-summary-text" style="color: #fff;" >Explore Our project and Workspace</p>
     
           
             <ul class="navigation-list">
               
                 <li>
-                  <a href="">
-                    MAP & DETAILS
+                  <a style="color: #fff;" href="{% url 'mapdetail' %}">
+                    MAP & DETAIL
                   </a>
                   
                 </li>
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'mohanpura' %}">
                     MOHANPURA
                   </a>
                   
@@ -195,7 +200,7 @@
                   
                 </li>
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'kundaliya' %}">
                     KUNDALIYA
                   </a>
                   
@@ -227,7 +232,7 @@
                 </li>
               
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'faq' %}">
                     FAQ
                   </a>
                   
@@ -238,34 +243,34 @@
         </div>
       
         <div>
-          <h3><a href="" style="color: #fff;" >JOURNEY</a></h3>
-          <p class="nav-summary-text" style="color: #fff;" >Engage in network activities and events...</p>
+          <h3><a href="{% url 'journey' %}" style="color: #ff6617" >JOURNEY</a></h3>
+          <p class="nav-summary-text" style="color: #fff;" >Our Journey beigns with new activities and events...</p>
     
           
             <ul class="navigation-list">
               
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'story' %}">
                     STORY
                   </a>
                   
                 </li>
               
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'firststep' %}">
                     FIRST STEP
                   </a>
                   
                 </li>
               
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'implementation' %}">
                     IMPLEMENTATION
                   </a>
                   
                 </li>
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'establishment_of_pmu' %}">
                     ESTABLISHMENT OF PMU
                   </a>
                   
@@ -276,19 +281,36 @@
         </div>
       
         <div>
-          <h3><a href="" style="color: #fff;" >IMPACT</a></h3>
-          <p class="nav-summary-text" style="color: #fff;" >Engage in network activities and events...</p>
+          <h3><a href="{% url 'impact' %}" style="color: #ff6617" >IMPACT</a></h3>
+          <p class="nav-summary-text" style="color: #fff;" >Engage in Impact activities and events...</p>
     
           
             <ul class="navigation-list">
               
                 <li>
-                  <a href="">
+                  <a style="color: #fff;" href="{% url 'storiesofchange' %}">
                     STORIES OF CHANGE
                   </a>
                   
                 </li>
-              
+                <li>
+                  <a style="color: #fff;" href="{% url 'resources' %}">
+                    RESOURCES
+                  </a>
+                  
+                </li>
+                <li>
+                  <a style="color: #fff;" href="{% url 'peoplesvoice' %}">
+                    PEOPLE'S VOICE
+                  </a>
+                  
+                </li>
+                <li>
+                  <a style="color: #fff;" href="{% url 'learn' %}">
+                    LEARN
+                  </a>
+                  
+                </li>
                
               
             </ul>
@@ -343,6 +365,10 @@
   <!-- //script -->
   <!-- script for tesimonials carousel slider -->
 
-
+  <script>
+    tinymce.init({
+      selector: '#mytextarea'
+    });
+  </script>
     
     </body></html>

@@ -36,8 +36,8 @@ def NETWORK(request):
 def BASIN(request):
     return render(request, 'explore/basin.html')
 
-def ABOUT_US(request):
-    return render(request, 'explore/about_us.html')
+def ABOUT_PROJECT(request):
+    return render(request, 'explore/about_project.html')
 
 def ABOUT_TEAM(request):
     CT = CoreTeam.objects.all()
