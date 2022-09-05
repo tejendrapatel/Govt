@@ -23,6 +23,7 @@ urlpatterns = [
   path('location', LOCATION, name='location'),
 
   path('videos', VIDEOS, name='videos'),
+  path('photo', PHOTO, name='photo'),
   path('audios', AUDIOS, name='audios'),
   path('blogs', BLOGS, name='blogs'),
   ##################JOURNEY###################

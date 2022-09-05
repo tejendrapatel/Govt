@@ -31,6 +31,8 @@ class OurPartner(models.Model):
     def __str__(self):
         return self.name
 
+######################EXPLORE###############
+
 class Blog_category(models.Model):
     name = models.CharField(max_length=100)
     def __str__(self):
@@ -47,6 +49,9 @@ class Blogs(models.Model):
     def __str__(self):
         return self.name
 
+class Gallery(models.Model):
+    image = models.FileField(null=True)
+    
 
 class Story_category(models.Model):
     name = models.CharField(max_length=100)

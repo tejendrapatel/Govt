@@ -58,6 +58,11 @@ def VIDEOS(request):
 def AUDIOS(request):
     return render(request, 'explore/Audios.html')
 
+def PHOTO(request):
+    pho = Gallery.objects.all()
+    d = {"pho":pho}
+    return render(request, 'explore/photo.html',d)
+
 def BLOGS(request):
     blo = Blogs.objects.all()
     d = {"blo":blo}
